@@ -24,7 +24,6 @@
       },
       { "text": "There's something I want you to do.", "topic": "TALK_MAID_ORDERS" },
       { "text": "I just wanted to talk for a bit.", "topic": "TALK_MAID_SOCIAL" },
-      { "text": "Can you help me understand something?  (HELP/TUTORIAL)", "topic": "TALK_ALLY_TUTORIAL" },
 	  {
         "text": "It's time for your milking.",
         "topic": "TALK_MAID_MILK",
@@ -92,7 +91,7 @@
 		"topic": "TALK_SHOGGOTH_HEART",
 		"condition": {"npc_has_trait": "THRESH_SHOGGOTH"}
 	  },
-      { "text": "I changed my mind, wanted to ask you something else.", "topic": "TALK_NONE" },
+      { "text": "I changed my mind, wanted to ask you something else.", "topic": "TALK_MAID_ALLY" },
       { "text": "Let's go.", "topic": "TALK_DONE" }
     ]
   },
@@ -240,13 +239,13 @@
       {
         "text": "Guard this position.",
         "condition": { "not": "is_by_radio" },
-        "topic": "TALK_FRIEND_GUARD",
+        "topic": "TALK_MAID_GUARD",
         "effect": "assign_guard"
       },
       {
         "text": "I want to assign you to work at this camp.",
         "condition": { "npc_at_om_location": "FACTION_CAMP_ANY" },
-        "topic": "TALK_FRIEND_GUARD",
+        "topic": "TALK_MAID_GUARD",
         "effect": "assign_camp"
       },
       {
@@ -305,6 +304,15 @@
     ]
   },
   {
+    "id": "TALK_MAID_GUARD",
+    "type": "talk_topic",
+    "dynamic_line": "With my life, master!",
+    "responses": [
+      { "text": "I need you to come with me.", "topic": "TALK_MAID_ALLY", "effect": "stop_guard" },
+      { "text": "See you around.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
     "id": "TALK_TRAIN_PERSUADE_MAID",
     "type": "talk_topic",
     "dynamic_line": "But master...you can just leave everything to me!",
@@ -315,7 +323,6 @@
         "success": { "topic": "TALK_TRAIN" },
         "failure": { "topic": "TALK_DENY_PERSONAL", "effect": { "npc_add_effect": "asked_to_train", "duration": 3600 } }
       },
-      { "text": "Never mind then.", "topic": "TALK_NONE" },
       { "text": "Forget it, let's get going.", "topic": "TALK_DONE" }
     ]
   },
@@ -328,7 +335,6 @@
         "text": "It's fine, we've got a moment.",
         "topic": "TALK_MAID_CONVERSATION"
       },
-      { "text": "Good point, let's find a more appropriate place.", "topic": "TALK_NONE" },
       { "text": "You're right.  Forget I said anything, let's get moving.", "topic": "TALK_DONE" }
     ]
   },
@@ -336,7 +342,7 @@
     "id": "TALK_MAID_CONVERSATION",
     "type": "talk_topic",
     "dynamic_line": "My history? You mean before I served you? ...I'm sorry, but...",
-    "responses": [ { "text": "Actually, never mind.", "topic": "TALK_NONE" } ]
+    "responses": [ { "text": "Actually, never mind.", "topic": "TALK_DONE" } ]
   },
   {
     "id": "TALK_SHOGGOTH_CHAT",
@@ -500,7 +506,7 @@
       },
       { "text": "Set up pickup rules.", "topic": "TALK_MISC_RULES_MAID","condition": {"not": {"npc_has_trait": "MAID_RESTRICT"}}, "effect": "set_npc_pickup" },
       { "text": "Clear all overrides.", "topic": "TALK_MISC_RULES_MAID", "effect": "clear_overrides" },
-      { "text": "Never mind.", "topic": "TALK_NONE" }
+      { "text": "Never mind.", "topic": "TALK_DONE" }
     ]
   },
   {
