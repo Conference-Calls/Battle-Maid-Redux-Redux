@@ -31,35 +31,60 @@ WHAT'S NEW?
 - Weapon and armor rebalance: mod weapons buffed to vanilla levels. Mod clothing now actually provides storage as advertised.
 
 How Do I Get Maid Points?
+
 -Find or craft a master's doll. I admit the system is somewhat silly, but I wasn't sure how to change it.
 
 How Do I Get A [REDACTED] Maid?
+
 -Find the 'impossible scribbles'. Rare spawn in labs. No, [REDACTED] maids aren't bugged. They're not supposed to be able to use items - believe me,
  they're strong enough without them.
 
 How Do I Learn the New Style?
+
 -Choose profession Battle Maid or find 'A Maid's Memoirs' in a mansion.
 
 How Does the New Style Work?
+
 -A lot like Aikido, but with weapons. Extremely risk/reward based - you will either style on your opponents and take no damage or get completely wrecked.
  Survives groups very well with plentiful defensive buffs, but you have to shed those buffs to access your offensive techniques. Relies very heavily
  on getting to Melee 3 and 5.
 
 (SPOILERS)
 Static Buffs:
+
 -For Another(Melee 0): +1 blocks, -1 dodge skill
+
 -Silent Presence(Melee 3): +1 dodges, +2 dodge skill
+
+
 OnMove Buffs:
+
 -Rush(Melee 0): -1 to hit, +2 dodge skill, -30% damage. 1 turn.
+
+
 OnPause Buffs:
+
 -Collected Miscellany(Melee 0): -2 blocks, -1 dodges. Yes, you read that right. One dodge only - hope you make it. 1 turn.
+
+
 OnGetHit Buffs:
+
 Flustered(Melee 0): -1 dodges, -2 dodge skill. Stacks with Collected Miscellany. Try not to get both of them together. 1 turn.
+
+
 Techniques:
+
 -Measured Strike(Melee 3): 133% damage, Stun 1. Requires Collected Miscellany
+
 -Measured Assault(Melee 3): 166% damage, Knockback 1, Down 2. Requires Collected Miscellany. Crit only.
+
 -Coup de Grâce(Melee 5): 150% movecost, 200% damage. Requires Collected Miscellany and a downed enemy. Normal and Crit.
+
 -Anti-Molestation Technique No.15(Melee 1): Grab Break
+
+
 Counters:
+
 Desperate Counter(On Block, Melee 1): 25% damage, Knockback 1.
+
 Spurn(On Dodge, Melee 5): 50% damage, Down 1. Requires Collected Miscellany.
